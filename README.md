@@ -4,20 +4,24 @@
 
 ![Screen Shot 12400](https://user-images.githubusercontent.com/4536776/151729828-5aa17320-ac7c-4992-802f-4a97c88f427e.png)
 
+**Credits**
+
+Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-PLUS-Wi-Fi-D4-Hackintosh.  In order to facilitate the greatest number of folks getting this information, I've slightly modified these files, tested it on the Asrock B660M-HDV, and am publishing the results in English.  If there are updates or items I've missed (as again, this is not my original content), please file an issue so I can correct it.  Modifications are:  Networking, removal of unused SSDTs, removal of unused KEXTs, use of CorpNewt's https://github.com/corpnewt/CPU-Name CPU-Name to update the About-This-Mac information, and removal of the "ProvideCurrentCPUInfo" quirk so that Intel CPUs with no efficiency cores can boot properly.  For an excellent discussion in English on these details and more, see https://www.tonymacx86.com/threads/z690-chipset-and-alder-lake-cpus.316618/ and https://www.tonymacx86.com/threads/asus-z690-proart-creator-wifi-thunderbolt-4-i7-12700k-amd-rx-6800-xt.318311/page-21#post-2304707.  
+
 **Tested macOS**
 
-* Big Sur 12.2 with OC77  1/10/2022
+* Monterey 12.2 with OC77  1/10/2022
 
 **Hardware**
 
 * Asrock B660M-HDV with BIOS 3.02 1/5/22 
 * Intel i5-12400F
-* AMD Radeon RX 5700 8GB
+* AMD Radeon RX 5700 8GB [An AMD GPU is required regardless of which 12th gen CPU you use]
 * 64GB RAM [2 x 32GB DIMMs]
 * 2TB NVME
 * SuperMicro Server PSU
 * PowerMac G5 Case, LaserHive MATX 120 modifications
-* BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW/?tag=tonymacx86com-20) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) - fits perfectly on this motherboard
+* BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW/?tag=tonymacx86com-20) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) - fits perfectly on this motherboard in the wireless slot; no BIOS blocking or whitelisting of add-in cards exists on this machine.
 
 **Working**
 
@@ -35,7 +39,7 @@
 **Not Working**
 
 * Sidecar (due to the use of MacPro7,1 SMBIOS, this won’t work), as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
-* Items requiring QuickSync won't work, as the i5-12400F doesn't have an iGPU 
+* Items requiring QuickSync won't work, as the i5-12400F doesn't have an iGPU
 
 **Disabled**
 
@@ -74,7 +78,7 @@ Now let's fix your MAC address (ROM)
 * [The easy way; untested] Click GENERATE immediately to the right of the ROM box. 
 * Serialization and ROM setup is now complete.  Press the SAVE icon in OCAT and then quit OCAT. 
 * Your USB stick is ready to use to boot your Mac and install MacOS.  
-* **After all of the above:  Go to Dortania's page and run through the tests before logging in with any AppleID accounts.  https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html**
+* **After all of the above:  Go to Dortania's page and read - before logging in with any AppleID accounts.  https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html**
 
 **Final Steps**
 
