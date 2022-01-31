@@ -10,14 +10,14 @@
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 3.02 (1/5/22) 
+* Asrock B660M-HDV with BIOS 3.02 1/5/22 
 * Intel i5-12400F
 * AMD Radeon RX 5700 8GB
 * 64GB RAM [2 x 32GB DIMMs]
 * 2TB NVME
 * SuperMicro Server PSU
 * PowerMac G5 Case, LaserHive MATX 120 modifications
-* BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW/?tag=tonymacx86com-20) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) 
+* BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW/?tag=tonymacx86com-20) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) - fits perfectly on this motherboard
 
 **Working**
 
@@ -34,7 +34,8 @@
 
 **Not Working**
 
-* Sidecar (due to the use of MacPro7,1 SMBIOS, this won’t work; can be fixed by flipping to iMac19,1 SMBIOS quite easily, but then AppleTV and other applications may not play as easily) 
+* Sidecar (due to the use of MacPro7,1 SMBIOS, this won’t work), as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
+* Items requiring QuickSync won't work, as the i5-12400F doesn't have an iGPU 
 
 **Disabled**
 
@@ -59,12 +60,12 @@ You will need to do the following:
 
 * The EFI partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile. 
 
-Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *before* you boot into MacOS for the first time with the right serials and ROM info: 
+Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *after* you boot into MacOS for the first time with the right serials and ROM info: 
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button on the left side of the window and updating.  Don't continue until you've done this. 
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button on the left side of the window and updating.  Don't continue until you've done this.  Run the latest OCAT version.
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row. 
-* Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the iMacPro1,1.  Then click GENERATE right next to the iMacPro1,1 box.  Your serial numbers are now set up.  
+* Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.  
 
 Now let's fix your MAC address (ROM) 
 
