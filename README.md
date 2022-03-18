@@ -87,4 +87,5 @@ Now let's fix your MAC address (ROM)
 * Versioning on the zipfile is V100.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  Note this has nothing to do with the versioning of your motherboard.
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that. 
 * If the resulting USB stick won't boot, a quick first-order check is to use OCAT to update OpenCore (check the tooltips and icons at the top of the window) on your USB stick, and then try booting again.  
+* Use OCAuxiliaryTools to update to OC79; update to MacOS 12.3 as well.
 * Otherwise, please leave comments/issues here. 
