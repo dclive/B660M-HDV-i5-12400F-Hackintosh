@@ -1,4 +1,4 @@
-**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC77, MacOS12.2**
+**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC77, MacOS12.2 (and 12.3.1)**
 
 # 
 
@@ -10,11 +10,11 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.2 with OC77  1/10/2022; updates to OC79 using OpenCore Aux Tools works great.  Updates to MacOS 12.3 works great.
+* Monterey 12.2 with OC77  1/10/2022; updates to OC79 using OpenCore Aux Tools works great.  Updates to MacOS 12.3.1 works great.
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 3.02 1/5/22 
+* Asrock B660M-HDV with BIOS 5.05 3/29/22 
 * Intel i5-12400F
 * AMD Radeon RX 5700 8GB [An AMD GPU is required regardless of which 12th gen CPU you use]
 * 64GB RAM [2 x 32GB DIMMs]
@@ -44,11 +44,11 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Disabled**
 
-* Fast Boot, CSM
+* Fast Boot, VT-d
 
 **Enabled**
 
-* Above 4G decoding, VT-x
+* Above 4G decoding, VT-x, CSM
 
 **Next Steps - Required**
 
@@ -89,5 +89,5 @@ Now let's fix your MAC address (ROM)
 * Versioning on the zipfile is V100.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  Note this has nothing to do with the versioning of your motherboard.
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that. 
 * If the resulting USB stick won't boot, a quick first-order check is to use OCAT to update OpenCore (check the tooltips and icons at the top of the window) on your USB stick, and then try booting again.  
-* Use OCAuxiliaryTools to update to OC79; update to MacOS 12.3 as well.
+* Use OCAuxiliaryTools to update to OC79; update to MacOS 12.3.x as well.
 * Otherwise, please leave comments/issues here. 
