@@ -1,6 +1,6 @@
 **Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC77, MacOS12.2 (and 12.3.1)**
 
-# 
+ 
 
 ![Screen Shot 12400](https://user-images.githubusercontent.com/4536776/151729828-5aa17320-ac7c-4992-802f-4a97c88f427e.png)
 
