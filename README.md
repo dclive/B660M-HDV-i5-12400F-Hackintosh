@@ -44,7 +44,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Disabled**
 
-* Fast Boot, VT-d
+* Fast Boot, VT-d, serial port
 
 **Enabled**
 
