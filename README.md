@@ -17,9 +17,9 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * Asrock B660M-HDV with BIOS 5.05 3/29/22 
 * Intel i5-12400F
 * AMD Radeon RX 5700 8GB [An AMD GPU is required regardless of which 12th gen CPU you use]
-* 64GB RAM [2 x 32GB DIMMs]
-* 2TB NVME
-* SuperMicro Server PSU
+* 64GB RAM PC3200 [2 x 32GB DIMMs]
+* 2TB NVME [ADATA 8200 Pro]
+* Corsair RM650x
 * PowerMac G5 Case, LaserHive MATX 120 modifications
 * BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) - fits perfectly on this motherboard in the wireless slot; no BIOS blocking or whitelisting of add-in cards exists on this machine.
 
