@@ -10,7 +10,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.2 with OC77  1/10/2022; updates to OC81using OpenCore Aux Tools works great.  
+* Monterey 12.2 with OC77  1/10/2022; update to OC81using OpenCore Aux Tools works great.  
 * Update to MacOS 12.4 works great.
 
 **Hardware**
