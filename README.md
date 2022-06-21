@@ -10,14 +10,14 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.2 with OC77  1/10/2022; update to OC81 using OpenCore Aux Tools works great.  
+* Monterey 12.2 with OC77; update to OC81 using OpenCore Aux Tools works great.  
 * Update to MacOS 12.4 works great.
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 5.05 3/29/22 
+* Asrock B660M-HDV with BIOS 5.05 3/29/22 [**NOTE:  DO NOT UPDATE BIOS FURTHER**] 
 * Intel i5-12400F
-* AMD Radeon RX 5700 8GB [An AMD GPU is required regardless of which 12th gen CPU you use]
+* AMD RX 5700 GPU [An AMD GPU is required regardless of which 12th gen CPU you use]
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
