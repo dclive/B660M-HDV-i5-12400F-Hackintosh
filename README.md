@@ -14,7 +14,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 5.05 3/29/22 [**NOTE:  DO NOT UPDATE BIOS FURTHER**] 
+* Asrock B660M-HDV with BIOS 5.05 3/29/22 [**NOTE:  DO NOT UPDATE BIOS FURTHER**; later versions won't boot for me] 
 * Intel i5-12400F
 * AMD RX 5700 GPU [An AMD GPU is required regardless of which 12th gen CPU you use]
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
@@ -41,6 +41,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * Sidecar, as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
 * Items requiring QuickSync won't work, as the i5-12400F doesn't have an iGPU.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
+* Universal Control and related functions aren't reliable for me.  Others have reported success.
 
 **Disabled**
 
