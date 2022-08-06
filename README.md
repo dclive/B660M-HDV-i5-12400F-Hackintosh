@@ -10,12 +10,13 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5 with OC81 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]
+* Monterey 12.5 with OC82 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]. Do note that while this is an older OpenCore, OpenCore is a breeze to update using a tool called OCAT - OpenCore Aux Tools.  
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 5.05 3/29/22 [**NOTE:  DO NOT UPDATE BIOS FURTHER**; later versions won't boot for me] 
-* Later versions of the BIOS (namely, 8.01) do work for me, but require some fiddling of the OC config files.  I can post this as part of an OC82 update if required.  **I do not recommend flashing BIOS past 5.05.  I have had significant slowdowns in MacOS since upgrading, losing literally 50% of my speed in GeekBench, and I cannot clearly see a reason, in spite of testing with many different EFI combinations.  Do not upgrade BIOS unless you're willing to accept the risk of issues.** 
+* Asrock B660M-HDV with BIOS 5.05 3/29/22 **If your BIOS works, don't update it.**
+* Later versions of the BIOS (namely, 8.01) do work for me, but require some fiddling of the OC config files.  **I do not recommend flashing BIOS once you've gotten a stable machine.**  I have had significant slowdowns in MacOS since upgrading from 5.05 to 8.01, losing literally 50% of my speed in GeekBench, and I cannot clearly see a reason, in spite of testing with many different EFI combinations.  Do not upgrade BIOS unless you're willing to accept the risk of issues and slowdowns.** 
+* But it works at full speed in Windows... 
 * Intel i5-12400F
 * AMD RX 5700 GPU [An AMD GPU is required regardless of which 12th gen CPU you use]
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
