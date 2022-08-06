@@ -10,11 +10,12 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.4 with OC81 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]
+* Monterey 12.5 with OC81 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]
 
 **Hardware**
 
 * Asrock B660M-HDV with BIOS 5.05 3/29/22 [**NOTE:  DO NOT UPDATE BIOS FURTHER**; later versions won't boot for me] 
+* Later versions of the BIOS (namely, 8.01) do work for me, but require some fiddling of the OC config files.  I can post this as part of an OC82 update if required.  **I do not recommend flashing BIOS past 5.05.  I have had significant slowdowns in MacOS since upgrading, losing literally 50% of my speed in GeekBench, and I cannot clearly see a reason, in spite of testing with many different EFI combinations.  Do not upgrade BIOS unless you're willing to accept the risk of issues.** 
 * Intel i5-12400F
 * AMD RX 5700 GPU [An AMD GPU is required regardless of which 12th gen CPU you use]
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
@@ -45,17 +46,17 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Disabled**
 
-* Fast Boot, VT-d, serial port
+* Fast Boot, VT-d, serial port, CSM
 
 **Enabled**
 
-* Above 4G decoding, VT-x, CSM
+* Above 4G decoding, VT-x
 
 **Next Steps - Required**
 
 You will need to do the following: 
 
-* Prepare a USB boot disk for MacOS 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.
+* Prepare a USB boot disk for MacOS 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI (ESP) partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
 
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
@@ -65,10 +66,11 @@ You will need to do the following:
 ![EFI Layout](https://user-images.githubusercontent.com/4536776/134783624-10b0c7ba-fb29-4cf1-8017-230d22f8e18b.png)
 
 * The EFI (ESP) partition on the USB stick has an EFI folder in it, and inside of that folder, there are two subfolders, OC and Boot, each with files in them.  Make sure your EFI partition looks just like this once you've unzipped the zipfile. 
+* Note that you'll have TWO partitions on that one USB stick:  the EFS/EFI partition (which has just the EFI folder on it, with the contents above) and the other partition, usually called 'Install MacOS Monterey' which will house the Mac's OS/installation details.  
 
 Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *after* you boot into MacOS for the first time with the right serials and ROM info: 
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC82 is current and fully working.
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row. 
 * Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.  
