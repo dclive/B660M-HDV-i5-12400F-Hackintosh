@@ -1,4 +1,4 @@
-**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC81, MacOS12.4**
+**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC82, MacOS12.5**
 
  
 
@@ -10,15 +10,17 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5 with OC82 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]. Do note that while this is an older OpenCore, OpenCore is a breeze to update using a tool called OCAT - OpenCore Aux Tools.  
+* Monterey 12.5 with OC82 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]. Do note that while this is an older OpenCore, OpenCore is a breeze to update using a tool called OCAT - OpenCore Aux Tools.  Please note OC81 is included in this zipfile.    
 
 **Hardware**
 
 * Asrock B660M-HDV with BIOS 5.05 3/29/22 **If your BIOS works, don't update it.**
-* Later versions of the BIOS (namely, 8.01) do work for me, but require some fiddling of the OC config files.  **I do not recommend flashing BIOS once you've gotten a stable machine.**  I have had significant slowdowns in MacOS since upgrading from 5.05 to 8.01, losing literally 50% of my speed in GeekBench, and I cannot clearly see a reason, in spite of testing with many different EFI combinations.  Do not upgrade BIOS unless you're willing to accept the risk of issues and slowdowns.** 
-* But it works at full speed in Windows... 
+* Later versions of the BIOS (namely, 8.01) do work for me, but require some fiddling of the OC config files - and significantly cut my CPU speed.  **I do not recommend flashing BIOS once you've gotten a stable machine.**  I have had significant slowdowns in MacOS since upgrading from 5.05 to 8.01, losing literally 50% of my speed in GeekBench, and I cannot clearly see a reason, in spite of testing with many different EFI combinations.  Do not upgrade BIOS unless you're willing to accept the risk of issues and slowdowns. 
+* ....but it works at full speed in Windows.
 * Intel i5-12400F
-* AMD RX 5700 GPU [An AMD GPU is required regardless of which 12th gen CPU you use]
+* AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
+  * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  
+
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
@@ -27,7 +29,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Working**
 
-* Bluetooth, Wi-Fi and ethernet
+* Bluetooth, Wi-Fi [See above add-in card] and LOM ethernet
 * AMD GPU HDMI & DP Audio;motherboard 3.5MM audio out (audio in is untested)
 * Sleep / Wake
 * App Store, Time Machine
@@ -40,8 +42,8 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Not Working**
 
+* Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  
 * Sidecar, as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
-* Items requiring QuickSync won't work, as the i5-12400F doesn't have an iGPU.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
 * Universal Control and related functions aren't reliable for me.  Others have reported success.
 
