@@ -1,4 +1,4 @@
-**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC82, MacOS12.5**
+**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC83, MacOS12.5**
 
  
 
@@ -10,12 +10,12 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5 with OC82 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]. Do note that while this is an older OpenCore, OpenCore is a breeze to update using a tool called OCAT - OpenCore Aux Tools.  Please note OC81 is included in this zipfile.    
+* Monterey 12.5 with OC83 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing]. Do note that while this is an older OpenCore, OpenCore is a breeze to update using a tool called OCAT - OpenCore Aux Tools.  Please note OC81 is included in this zipfile.    
 
 **Hardware**
 
 * Asrock B660M-HDV with BIOS 5.05 3/29/22 **If your BIOS works, don't update it.**
-* Later versions of the BIOS (namely, 8.01) do work for me, but require some fiddling of the OC config files - and significantly cut my CPU speed.  **I do not recommend flashing BIOS once you've gotten a stable machine.**  I have had significant slowdowns in MacOS since upgrading from 5.05 to 8.01, losing literally 50% of my speed in GeekBench, and I cannot clearly see a reason, in spite of testing with many different EFI combinations.  Do not upgrade BIOS unless you're willing to accept the risk of issues and slowdowns. 
+* Later versions of the BIOS (namely, 8.01) do work for me, but require some fiddling of the OC config files - and significantly cut my CPU speed.  **I do not recommend flashing BIOS once you've gotten a stable machine.**  I have had significant slowdowns in MacOS since upgrading from 5.05 to 8.01, losing literally 50% of my speed in GeekBench, and I cannot clearly see a reason, in spite of testing with many different EFI combinations.  Do not upgrade BIOS unless you're willing to accept the risk of issues and slowdowns.  No, flashing back to BIOS 5.05 didn't fix.  :(
 * ....but it works at full speed in Windows.
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
@@ -73,7 +73,7 @@ You will need to do the following:
 
 Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *after* you boot into MacOS for the first time with the right serials and ROM info: 
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC82 is current and fully working.
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC83 is current and fully working.
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row. 
 * Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.  
