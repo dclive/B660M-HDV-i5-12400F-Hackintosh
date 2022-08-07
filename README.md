@@ -1,6 +1,8 @@
-**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC83, MacOS12.5**
+**Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC83, MacOS12.5** 
 
-*MAJOR CHANGES:  Now works with BIOS 8.01, Intel's Turbo works again for a significant speedup.  OpenCore .83.* 
+*MAJOR CHANGES:  *
+
+*Now works with BIOS 8.01, Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.0 Ventura B4 is lightly tested.
 
  
 
