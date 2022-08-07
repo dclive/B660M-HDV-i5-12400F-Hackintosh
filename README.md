@@ -1,10 +1,12 @@
 **Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC83, MacOS12.5**
 
-MAJOR CHANGES:  Now works with BIOS 8.01, Intel's Turbo works! 
+*MAJOR CHANGES:  Now works with BIOS 8.01, Intel's Turbo works again for a significant speedup.  OpenCore .83.* 
 
  
 
 ![Screen Shot 12400](https://user-images.githubusercontent.com/4536776/151729828-5aa17320-ac7c-4992-802f-4a97c88f427e.png)
+
+![183303929-75a8924a-09b9-4de0-acbd-d149a6264262](https://user-images.githubusercontent.com/4536776/183303929-75a8924a-09b9-4de0-acbd-d149a6264262.png)
 
 **Credits**
 
@@ -32,7 +34,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * Bluetooth, Wi-Fi [See above add-in card] and LOM ethernet
 * AMD GPU HDMI & DP Audio;motherboard 3.5MM audio out (audio in is untested)
 * Sleep / Wake
-* App Store, Time Machine
+* App Store, Time Machine [But to recover, keep track of your USB stick with your serials/MAC Address/etc. embedded in it!]
 * Apple Watch unlock (mostly reliable, not perfect), AirDrop
 * USB port mapping is complete, resulting in iPhone/iPads charging at 2100 ma, and Apple Watch at 1000 ma.  If yours (iPhone, iPad, Apple Watch) doesn't show this rate in About This Mac / System Report / USB, then your USB mapping may not be working correctly.  All 'A' USB ports on this motherboard, USB2 and USB3, are in use and 'active' (working).  USB-C port works, but is only lightly tested. 
 
