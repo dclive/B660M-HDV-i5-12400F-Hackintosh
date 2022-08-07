@@ -49,7 +49,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Disabled**
 
-* In the Asrock B660M-HDV BIOS:  Disable:  Fast Boot, VT-d, serial port, CSM
+* In the Asrock B660M-HDV BIOS:  Disable:  Fast Boot, VT-d, serial port, CSM, CAM (Clever Access Memory, AKA Resize Bar)
 
 **Enabled**
 
