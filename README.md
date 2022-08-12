@@ -2,7 +2,7 @@
 
 *MAJOR CHANGES:  *
 
-*Now works with BIOS 8.01, Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.0 Ventura B4 is lightly tested.
+*Now works with B660M HDV BIOS 8.01 and Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.0 Ventura B4 is lightly tested; Ventura works  but power management (sleep/wake) isn't perfect.  
 
  
 
@@ -12,7 +12,7 @@
 
 **Credits**
 
-Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-PLUS-Wi-Fi-D4-Hackintosh.  In order to facilitate the greatest number of people getting this information, I've slightly modified these files, tested it on the Asrock B660M-HDV, and am publishing the results in English.  If there are items I've missed (as again, this is not my original content), please file an issue so I can correct it.  Modifications are:  Kernel/Quirks/AppleXcpmForceBoost (for better turbo), networking, unselection of unused SSDTs, unselection of unused KEXTs, use of CorpNewt's https://github.com/corpnewt/CPU-Name CPU-Name to update the About-This-Mac information, and removal of the "ProvideCurrentCPUInfo" quirk so that Intel CPUs with no efficiency cores can boot properly.  For an excellent discussion in English on these details and more, see https://www.tonymacx86.com/threads/z690-chipset-and-alder-lake-cpus.316618/ and https://www.tonymacx86.com/threads/asus-z690-proart-creator-wifi-thunderbolt-4-i7-12700k-amd-rx-6800-xt.318311/page-21#post-2304707.  
+Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-PLUS-Wi-Fi-D4-Hackintosh.  In order to facilitate the greatest number of people getting this information, I've slightly modified these files, tested it on the Asrock B660M-HDV, and am publishing the results in English.  If there are items I've missed (as again, this is not my original content), please file an issue so I can correct it.  Modifications are:  Kernel/Quirks/AppleXcpmForceBoost (for better turbo), networking, unselection of unused SSDTs, unselection of unused KEXTs, use of CorpNewt's https://github.com/corpnewt/CPU-Name CPU-Name to update the About-This-Mac information, and removal of the "ProvideCurrentCPUInfo" quirk so that Intel CPUs with no efficiency cores can boot properly (if you're using a 12th gen with efficiency cores, you can leave this enabled).  For an excellent discussion in English on these details and more, see https://www.tonymacx86.com/threads/z690-chipset-and-alder-lake-cpus.316618/ and https://www.tonymacx86.com/threads/asus-z690-proart-creator-wifi-thunderbolt-4-i7-12700k-amd-rx-6800-xt.318311/page-21#post-2304707.  
 
 **Tested macOS**
 
@@ -20,7 +20,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 8.01 works great; I've not tested this EFI with older BIOSs.  It's safe to update to 8.01 now.  
+* Asrock B660M-HDV with BIOS 8.01 works well.  It's safe to update to 8.01, and all testing will only include 8.01 (or later) going forward.  Flash to 8.01.    
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  
@@ -35,7 +35,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 * Bluetooth, Wi-Fi [See above add-in card] and LOM ethernet
 * AMD GPU HDMI & DP Audio;motherboard 3.5MM audio out (audio in is untested)
-* Sleep / Wake
+* Sleep / Wake works; mouse / keyboard wakes machine
 * App Store, Time Machine [But to recover, keep track of your USB stick with your serials/MAC Address/etc. embedded in it!]
 * Apple Watch unlock (mostly reliable, not perfect), AirDrop
 * USB port mapping is complete, resulting in iPhone/iPads charging at 2100 ma, and Apple Watch at 1000 ma.  If yours (iPhone, iPad, Apple Watch) doesn't show this rate in About This Mac / System Report / USB, then your USB mapping may not be working correctly.  All 'A' USB ports on this motherboard, USB2 and USB3, are in use and 'active' (working).  USB-C port works, but is only lightly tested. 
