@@ -2,7 +2,7 @@
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 8.01 and Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.0 Ventura B5 is lightly tested; Ventura works.  
+*Now works with B660M HDV BIOS 8.01 and Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.0 Ventura is lightly tested & works great.  
 
  
 
@@ -16,7 +16,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5.1 with OC83/OC84 [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing].    
+* Monterey 12.5.1 with OC83/OC84; Venture 13.0 with OC85.  [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing].    
 
 **Hardware**
 
@@ -98,5 +98,5 @@ Now let's fix your MAC address (ROM)
 * Once setup is done, use EFIAgent to copy the USB stick's EFI folder, with your serial number modifications, to the SSD's EFI partition, and then you'll be able to boot from that disk (and you won't need the USB stick anymore, but keep it forever as a backup!). Do note:  Until you've copied the EFI folder from your USB stick to your SSD's EFI partition, you must continue to F11-boot into your USB stick before booting into MacOS.  Once you've copied the USB stick's EFI folder to the EFI partition on the SSD, then you'll no longer need to use the USB stick to boot.  
 * Versioning on this zipfile is OC83.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.  In the zip, logging is fully enabled, so that if there's a problem you can take a video of the screen on your phone and troubleshoot based on that.
-* Use OCAuxiliaryTools to update to later OpenCore releases, like OC84, which works fine.  Use MacOS's built-in update mechanism to update MacOS releases.  
+* Use OCAuxiliaryTools to update to later OpenCore releases, like OC85, which works fine.  Use MacOS's built-in update mechanism to update MacOS releases.  
 * Otherwise, please leave comments/issues here. 
