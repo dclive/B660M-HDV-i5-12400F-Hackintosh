@@ -2,7 +2,7 @@
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 8.01 and Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.0 Ventura is lightly tested & works great.  
+*Now works with B660M HDV BIOS 8.01 and Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.1 Ventura is lightly tested & works great.  
 
  
 
@@ -16,7 +16,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5.1 with OC83/OC84; Venture 13.0 with OC85.  [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing].    
+* Monterey 12.5.1 with OC83/OC84; Venture 13.0 with OC85-OC87.  [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing].    
 
 **Hardware**
 
@@ -49,11 +49,11 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  
 * Sidecar, as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
-* Universal Control and related functions don't work for me.  
+* Universal Control and related functions don't reliably work for me.  
 
 **Disabled**
 
-* In the Asrock B660M-HDV BIOS:  Disable:  Fast Boot, serial port, CSM, CAM (Clever Access Memory, AKA Resize Bar)
+* In the Asrock B660M-HDV BIOS:  Disable:  Fast Boot, serial port, CSM, CAM (Clever Access Memory, AKA Resize Bar).  Once you get everything else working, feel free to enable resize bar (and use the appropriate controls in OC) if you wish; I don't bother.
 
 **Enabled**
 
@@ -77,10 +77,11 @@ You will need to do the following:
 
 Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *after* you boot into MacOS for the first time with the right serials and ROM info: 
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC83 is current and fully working.  Over the course of time further updates will be required.
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC87 is current and fully working.  Over the course of time further updates will be required.
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row. 
-* Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.  
+* Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.
+* Note you can also use the GenSMBIOS command to do all this too (https://github.com/corpnewt/GenSMBIOS)  
 
 Now let's fix your MAC address (ROM) 
 
@@ -98,5 +99,5 @@ Now let's fix your MAC address (ROM)
 * Once setup is done, use EFIAgent to copy the USB stick's EFI folder, with your serial number modifications, to the SSD's EFI partition, and then you'll be able to boot from that disk (and you won't need the USB stick anymore, but keep it forever as a backup!). Do note:  Until you've copied the EFI folder from your USB stick to your SSD's EFI partition, you must continue to F11-boot into your USB stick before booting into MacOS.  Once you've copied the USB stick's EFI folder to the EFI partition on the SSD, then you'll no longer need to use the USB stick to boot.  
 * Versioning on this zipfile is OC83.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.  In the zip, logging is fully enabled, so that if there's a problem you can take a video of the screen on your phone and troubleshoot based on that.
-* Use OCAuxiliaryTools to update to later OpenCore releases, like OC85, which works fine.  Use MacOS's built-in update mechanism to update MacOS releases.  
+* Use OCAuxiliaryTools to update to later OpenCore releases, like OC87, which works fine.  Use MacOS's built-in update mechanism to update MacOS releases.  
 * Otherwise, please leave comments/issues here. 
