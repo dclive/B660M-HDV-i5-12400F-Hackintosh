@@ -2,7 +2,7 @@
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 8.01 and Intel's Turbo works again for a significant speedup.  OpenCore .83.*  MacOS 13.1 Ventura is lightly tested & works great.  
+*Now works with B660M HDV BIOS 10.04 (Tested 12.17.2022) and Intel's Turbo works again for a significant speedup.  OpenCore .87*  MacOS 13.1 Ventura is lightly tested & works great.  
 
  
 
@@ -20,7 +20,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 8.01 works well.  It's safe to update to 8.01, and all testing will only include 8.01 (or later) going forward.  Flash to 8.01.    
+* Asrock B660M-HDV with BIOS 10.04 works well.  It's safe to update, and all testing will only include 10.04 (or later) going forward.  Flash to 10.04.    
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  
@@ -57,13 +57,13 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Enabled**
 
-* Above 4G decoding, VT-x, VT-d
+* Above 4G decoding, VT-x, VT-d, XMP2.0.
 
 **Next Steps - Required**
 
 You will need to do the following: 
 
-* Prepare a USB boot disk for MacOS 12.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  
+* Prepare a USB boot disk for MacOS 13.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI (ESP) partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
 
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
