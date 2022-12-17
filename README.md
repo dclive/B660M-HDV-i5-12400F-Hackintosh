@@ -2,7 +2,7 @@
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 10.04 (Tested 12.17.2022) and Intel's Turbo works again for a significant speedup.  OpenCore .87*  MacOS 13.1 Ventura is lightly tested & works great.  
+*Now works with B660M HDV BIOS 10.04 (Tested 12.17.2022) and Intel's Turbo works again for a significant speedup.  OpenCore .87* & MacOS 13.1 Ventura is lightly tested & works great.  
 
  
 
@@ -20,7 +20,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 10.04 works well.  It's safe to update, and all testing will only include 10.04 (or later) going forward.  Flash to 10.04.    
+* Asrock B660M-HDV with BIOS 10.04 works well in MacOS Ventura 13.1.  It's safe to update, and all testing will only include 10.04 (or later) going forward.  Flash to 10.04.    
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  
@@ -28,7 +28,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
-* PowerMac G5 Case, LaserHive MATX 120 modifications
+* PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]
 * BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) - fits perfectly on this motherboard in the wireless slot; no BIOS blocking or whitelisting of add-in cards exists on this machine.
 
 **Working**
@@ -95,9 +95,14 @@ Now let's fix your MAC address (ROM)
 **Final Steps**
 
 * Assuming no other issues, your setup is now complete!   
-* Restart, press F11 at the Asrock boot screen so you can choose a boot disk, and boot from the USB stick (select the uEFI option if prompted).  You'll then be able to step through installation of MacOS.  You'll need to format your SSD as APFS or HFS+ (APFS is the new one; use that).  Name the newly formatted SSD something like **MacHD** so you know that's what you'll boot from in the future.    
+* Restart, press F11 at the Asrock boot screen so you can choose a boot disk, and boot from the USB stick (select the uEFI option if prompted).  You'll then be able to step through installation of MacOS.  You'll need to format your SSD as APFS or HFS+ (APFS is the new one; use that).  Name the newly formatted SSD something like **MacSSD** so you know that's what you'll boot from in the future.    
 * Once setup is done, use EFIAgent to copy the USB stick's EFI folder, with your serial number modifications, to the SSD's EFI partition, and then you'll be able to boot from that disk (and you won't need the USB stick anymore, but keep it forever as a backup!). Do note:  Until you've copied the EFI folder from your USB stick to your SSD's EFI partition, you must continue to F11-boot into your USB stick before booting into MacOS.  Once you've copied the USB stick's EFI folder to the EFI partition on the SSD, then you'll no longer need to use the USB stick to boot.  
 * Versioning on this zipfile is OC83.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.  In the zip, logging is fully enabled, so that if there's a problem you can take a video of the screen on your phone and troubleshoot based on that.
 * Use OCAuxiliaryTools to update to later OpenCore releases, like OC87, which works fine.  Use MacOS's built-in update mechanism to update MacOS releases.  
 * Otherwise, please leave comments/issues here. 
+
+**Benchmark Expectations**
+
+* Running 13.1 with BIOS 10.04 and an i5-12400F, and using PC3200 RAM, I get GeekBench 5.4.6 scores of 1757/8903 (single/multi-core) and 21369/3513 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  
+
