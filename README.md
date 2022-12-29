@@ -6,9 +6,9 @@
 
  
 
-![Screen Shot 12400](https://user-images.githubusercontent.com/4536776/151729828-5aa17320-ac7c-4992-802f-4a97c88f427e.png)
+![209979958-639eab22-4828-4d80-82e3-be2a5510edc7](https://user-images.githubusercontent.com/4536776/209979958-639eab22-4828-4d80-82e3-be2a5510edc7.jpeg)
 
-![183303929-75a8924a-09b9-4de0-acbd-d149a6264262](https://user-images.githubusercontent.com/4536776/183303929-75a8924a-09b9-4de0-acbd-d149a6264262.png)
+![209980390-7fa02f0c-1229-4c5f-9bb7-6b5f44acb73a](https://user-images.githubusercontent.com/4536776/209980390-7fa02f0c-1229-4c5f-9bb7-6b5f44acb73a.jpeg)
 
 **Credits**
 
@@ -16,7 +16,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5.1 with OC83/OC84; Venture 13.0+ with OC85+.  [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing].    
+* Monterey 12.5.1 with OC83/OC84; Venture 13.0+ with OC85+.  OC87 and Ventura 13.1 is the only focus of current testing.
 
 **Hardware**
 
