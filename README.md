@@ -16,14 +16,14 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5.1 with OC83/OC84; Venture 13.0 with OC85-OC87.  [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing].    
+* Monterey 12.5.1 with OC83/OC84; Venture 13.0+ with OC85+.  [The picture shows 12.2, which works fine too, but I focus on current MacOS releases in testing].    
 
 **Hardware**
 
 * Asrock B660M-HDV with BIOS 10.04 works well in MacOS Ventura 13.1.  It's safe to update, and all testing will only include 10.04 (or later) going forward.  Flash to 10.04.    
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
-  * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  
+  * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be accellerated) please see the appropriate section far below.  
 
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
@@ -77,7 +77,7 @@ You will need to do the following:
 
 Technically, you are now done.  You should be able to boot MacOS using the USB stick, and install MacOS onto your SSD.  That said, I usually suggest configuring it a bit *after* you boot into MacOS for the first time with the right serials and ROM info: 
 
-* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC87 is current and fully working.  Over the course of time further updates will be required.
+* Download OCAT https://github.com/ic005k/QtOpenCoreConfig and open it.  Read the tooltips showing what all the icons at the top do.  Update to the latest OCAT version by finding the update button and updating.  Don't continue until you've done this.  Run the latest OCAT version.  As of last edit, OC87 is current and fully working.  Over the course of time further updates will be required.  Become familiar with how to pull the latest OCxx release and KEXT updates from within OCAT 'into' your EFI configuration; you will do this a lot.  
 * Open your USB stick's config.plist by using OCAT's OPEN icon.
 * In OCAT, notice the row of icons on the left side.  Go to "PI" on the row. 
 * Let's generate a new serial.  Ensure, under the GENERIC tab, that for "SystemProductName" you have the MacPro7,1.  Then click GENERATE right next to the MacPro7,1 box.  Your serial numbers are now set up.
