@@ -2,7 +2,7 @@
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 10.04 (Tested 12.17.2022) and Intel's Turbo works again for a significant speedup.  OpenCore .87* & MacOS 13.1 Ventura is lightly tested & works great.  
+*Now works with B660M HDV BIOS 10.04 (Tested 12.17.2022) and Intel's Turbo works again for a significant speedup.  OpenCore .87* & MacOS 13.1 Ventura is  current & works great.  
 
  
 
@@ -106,3 +106,16 @@ Now let's fix your MAC address (ROM)
 
 * Running 13.1 with BIOS 10.04 and an i5-12400F, and using PC3200 RAM, I get GeekBench 5.4.6 scores of 1757/8903 (single/multi-core) and 21369/3513 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  
 
+**Addendum:  6900 Configuration**
+
+To get the 6900XT (XTXH) version working, you must enable the ssdt-brg0.aml file (supplied in the zip, already) in OCAT's ACPI section, and you must add the following to OCAT's DP / PCILists section:  
+
+​	PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)	
+
+And it must have two entries (on the right) associated with it: 
+
+​	device-id	Data	BF730000
+
+​	model	String	Radeon RX 6900 XT (XTXH)-DCL			(or whatever you'd like to call your 6900)
+
+Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M-HDV motherboard.  Other motherboards may label their bridge chips or other bits differently.  
