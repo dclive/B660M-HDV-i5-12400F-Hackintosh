@@ -121,3 +121,9 @@ And it must have two entries (on the right) associated with it:
 Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M-HDV motherboard, and possibly only with BIOS version 10.04.  Other motherboards may label their bridge chips or other bits differently.  
 
 ![209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6](https://user-images.githubusercontent.com/4536776/209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6.png)
+
+
+
+**Addendum:  OC88**
+
+OC88 works great; just use OCAT to update.  The changes are the core OC files plus Lilu, Whatevergreen, AppleALC.  No issues to report. 
