@@ -16,7 +16,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* Monterey 12.5.1 with OC83/OC84; Venture 13.0+ with OC85+.  OC87 and Ventura 13.1 is the only focus of current testing.
+* Monterey 12.5.1 with OC83/OC84; Venture 13.0+ with OC85+.  OC87+ and Ventura 13.1 is the only focus of current testing.
 
 **Hardware**
 
@@ -107,6 +107,8 @@ Now let's fix your MAC address (ROM)
 * Running 13.1 with BIOS 10.04 and an i5-12400F, and using PC3200 RAM, I get GeekBench 5.4.6 scores of 1757/8903 (single/multi-core) and 21369/3513 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  
 
 **Addendum:  6900 Configuration**
+
+Most graphics cards I've listed far above work fine with no additional work required.  A very specific variant of the AMD Radeon RX6900XT, called the XTHX variant, doesn't.  If you buy a 6900XT, there's no immediately obvious way to know which you have.  You'll known you have the XTXH because you'll get nice graphics, but there's no graphics accelleration, so doing common things in MacOS becomes very, very slow.  
 
 To get the 6900XT (XTXH) version working, you must enable the ssdt-brg0.aml file (supplied in the zip, already) in OCAT's ACPI section, and you must add the following to OCAT's DP / PCILists section:  
 
