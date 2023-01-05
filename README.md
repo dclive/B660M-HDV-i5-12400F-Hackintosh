@@ -108,7 +108,7 @@ Now let's fix your MAC address (ROM)
 
 **Addendum:  6900 Configuration**
 
-Most graphics cards I've listed far above work fine with no additional work required.  A very specific variant of the AMD Radeon RX6900XT, called the XTHX variant, doesn't.  If you buy a 6900XT, there's no immediately obvious way to know which you have.  You'll known you have the XTXH because you'll get nice graphics, but there's no graphics accelleration, so doing common things in MacOS becomes very, very slow.  
+Most graphics cards I've listed far above work fine with no additional work required.  A very specific variant of the AMD Radeon RX6900XT, called the XTHX variant, doesn't.  If you buy a 6900XT, there's no immediately obvious way to know which you have when looking at it, or within Windows.  In MacOS, you'll know you have the XTXH because you'll get nice graphics, but there's no graphics accelleration, so doing common things becomes very, very slow.  
 
 To get the 6900XT (XTXH) version working, you must enable the ssdt-brg0.aml file (supplied in the zip, already) in OCAT's ACPI section, and you must add the following to OCAT's DP / PCILists section:  
 
