@@ -126,6 +126,6 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 
 
-**Addendum:  **OC88, OC89**
+**Addendum:  OC88, OC89**
 
 OC88 & OC89 work great; just use OCAT to update.  No issues to report. 
