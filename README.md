@@ -28,7 +28,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * 64GB RAM PC3200 [2 x 32GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
-* PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]
+* PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]. :  Note:  I have no front panel USB3 ports.  You'll need to handle mapping your own USB3 (internal) ports if this is important to you / if you have a different case.  Use USBToolbox in Windows for the simplest experience.  Note that process will have TWO kexts you have to put into your Kexts folder, not one.  
 * BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) - fits perfectly on this motherboard in the wireless slot; no BIOS blocking or whitelisting of add-in cards exists on this machine.
 
 **Working**
@@ -126,6 +126,6 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 
 
-**Addendum:  OC88**
+**Addendum:  OC88**, OC89
 
-OC88 works great; just use OCAT to update.  The changes are the core OC files plus Lilu, Whatevergreen, AppleALC.  No issues to report. 
+OC88 & OC89 work great; just use OCAT to update.  No issues to report. 
