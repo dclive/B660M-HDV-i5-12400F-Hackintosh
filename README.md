@@ -1,4 +1,4 @@
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC87, MacOS13.1****
+****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC87, MacOS13.2.1****
 
 *MAJOR CHANGES:  *
 
@@ -16,7 +16,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC87+ and Ventura 13.1 is the only focus of current testing.
+* OC87+ and Ventura 13.1+ is the only focus of current testing.
 
 **Hardware**
 
