@@ -8,7 +8,9 @@
 
 ![209979958-639eab22-4828-4d80-82e3-be2a5510edc7](https://user-images.githubusercontent.com/4536776/209979958-639eab22-4828-4d80-82e3-be2a5510edc7.jpeg)
 
-![image-20230305143917354](/Users/david/Library/Application Support/typora-user-images/image-20230305143917354.png)
+
+
+**Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core.** 
 
 **Credits**
 
