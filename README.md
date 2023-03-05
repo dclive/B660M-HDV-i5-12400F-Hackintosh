@@ -2,13 +2,13 @@
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 10.04 (Tested 12.17.2022) and Intel's Turbo works again for a significant speedup.*  
+*Now works with B660M HDV BIOS 11.01 (Tested 3.4.2023) and Intel's Turbo works again for a significant speedup.*  
 
  
 
 ![209979958-639eab22-4828-4d80-82e3-be2a5510edc7](https://user-images.githubusercontent.com/4536776/209979958-639eab22-4828-4d80-82e3-be2a5510edc7.jpeg)
 
-![209980390-7fa02f0c-1229-4c5f-9bb7-6b5f44acb73a](https://user-images.githubusercontent.com/4536776/209980390-7fa02f0c-1229-4c5f-9bb7-6b5f44acb73a.jpeg)
+![image-20230305143917354](/Users/david/Library/Application Support/typora-user-images/image-20230305143917354.png)
 
 **Credits**
 
@@ -16,11 +16,11 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC87+ and Ventura 13.1+ is the only focus of current testing.
+* OC87+ and Ventura 13.2.1+ is the only focus of current testing.
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 10.04 works well in MacOS Ventura 13.1.  It's safe to update, and all testing will only include 10.04 (or later) going forward.  Flash to 10.04.    
+* Asrock B660M-HDV with BIOS 11.01 works well in MacOS Ventura 13.2.1.  It's safe to update, and all testing will only include 11.01 (or later) going forward.  Flash to 11.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea. 
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be accellerated) please see the appropriate section far below.  
@@ -128,4 +128,4 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 **Addendum:  OC88, OC89**
 
-OC88 & OC89 work great; just use OCAT to update.  No issues to report. 
+OC88 & OC89 work great; just use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed. 
