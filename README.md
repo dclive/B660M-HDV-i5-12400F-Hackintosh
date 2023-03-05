@@ -10,7 +10,7 @@
 
 
 
-**Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core.** 
+**Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core.** ![222985039-16203186-8d4d-448f-b910-020466b74e7e](https://user-images.githubusercontent.com/4536776/222985039-16203186-8d4d-448f-b910-020466b74e7e.png)
 
 **Credits**
 
