@@ -18,7 +18,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC87+ and Ventura 13.2.1+ is the only focus of current testing.
+* OC89+ and Ventura 13.2.1+ is the only focus of current testing.
 
 **Hardware**
 
@@ -106,7 +106,7 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Running 13.2.1 with BIOS 11.01 and an i5-12400F, and using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  
+* Running 13.2.1 with BIOS 11.01 and an i5-12400F, and using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  A typical M2 base $499 mini is (passmark) 2656/9858, so the base i5-12400F is about 82% of the M2's speed per core, and about 95% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
 
