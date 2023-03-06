@@ -106,7 +106,7 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Running 13.2.1 with BIOS 11.01 and an i5-12400F, and using PC3200 RAM, I get GeekBench 5.4.6 scores of 2188/9369 (single/multi-core) and 21369/3513 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  
+* Running 13.2.1 with BIOS 11.01 and an i5-12400F, and using PC3200 RAM, I get GeekBench 5.4.6 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  
 
 **Addendum:  6900 Configuration**
 
