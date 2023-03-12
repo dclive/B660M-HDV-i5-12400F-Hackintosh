@@ -10,7 +10,9 @@
 
 
 
-**Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core.** ![222985039-16203186-8d4d-448f-b910-020466b74e7e](https://user-images.githubusercontent.com/4536776/222985039-16203186-8d4d-448f-b910-020466b74e7e.png)
+**Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core, usuing PC3200 RAM: 
+
+(Using PC4266 RAM, typical is multi-core scores about 400-500 points higher; single-core isn't impacted)![222985039-16203186-8d4d-448f-b910-020466b74e7e](https://user-images.githubusercontent.com/4536776/222985039-16203186-8d4d-448f-b910-020466b74e7e.png)
 
 **Credits**
 
@@ -122,7 +124,7 @@ And it must have two entries (on the right) associated with it:
 
 ​	model	String	Radeon RX 6900 XT (XTXH)-DCL			(or whatever you'd like to call your 6900)
 
-Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M-HDV motherboard, and possibly only with BIOS version 10.04.  Other motherboards may label their bridge chips or other bits differently.  
+Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M-HDV motherboard, and possibly only with BIOS version 10.04/11.01.  Other motherboards may label their bridge chips or other bits differently.  
 
 ![209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6](https://user-images.githubusercontent.com/4536776/209982583-cfde040a-d2bb-46a3-b8dd-ef810f555fc6.png)
 
