@@ -1,4 +1,4 @@
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC87, MacOS13.2.1****
+****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC90, MacOS13.2.1****
 
 *MAJOR CHANGES:  *
 
