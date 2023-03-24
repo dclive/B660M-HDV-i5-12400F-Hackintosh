@@ -12,7 +12,15 @@
 
 **Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core, usuing PC3200 RAM: 
 
-(Using PC4266 RAM, typical is multi-core scores about 400-500 points higher; single-core isn't impacted)![222985039-16203186-8d4d-448f-b910-020466b74e7e](https://user-images.githubusercontent.com/4536776/222985039-16203186-8d4d-448f-b910-020466b74e7e.png)
+PC3200 RAM: 
+
+![Screenshot 4](https://user-images.githubusercontent.com/4536776/227410860-13e2bbdc-5244-4d30-87c7-61cc7f4dbc28.png)
+
+PC4266 RAM: 
+
+![Screenshot3](https://user-images.githubusercontent.com/4536776/227410659-f9182eaf-bc5a-4376-a990-e5467d01a475.png)
+
+
 
 **Credits**
 
@@ -101,7 +109,7 @@ Now let's fix your MAC address (ROM)
 * Assuming no other issues, your setup is now complete!   
 * Restart, press F11 at the Asrock boot screen so you can choose a boot disk, and boot from the USB stick (select the uEFI option if prompted).  You'll then be able to step through installation of MacOS.  You'll need to format your SSD as APFS or HFS+ (APFS is the new one; use that).  Name the newly formatted SSD something like **MacSSD** so you know that's what you'll boot from in the future.  Then you can start setup.  
 * Once setup is done, use EFIAgent to copy the USB stick's EFI folder, with your serial number modifications, to the SSD's EPS (EFI) partition, and then you'll be able to boot from that disk (and you won't need the USB stick anymore, but keep it forever as a backup!). Do note:  Until you've copied the EFI folder from your USB stick to your SSD's EPS (EFI) partition, you must continue to F11-boot into your USB stick before booting into MacOS.  Once you've copied the USB stick's EFI folder to the EPS (EFI) partition on the SSD, then you'll no longer need to use the USB stick to boot, and you'll just boot from the SSD's EPS (EFI). 
-* Versioning on this zipfile is OC87.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  
+* Versioning on this zipfile is OC90.  Future versions, if required, would have higher numbers so it is easier to see what version you have.  Keep the zipfile (name, at least) around so you know what version you have.  
 * You can clean up logs and logging / bootup, if you wish, once you have everything sorted.  Doritania's guide has a post-install cleanup section with good details on that.  In the zip, logging is fully enabled, so that if there's a problem you can take a video of the screen on your phone and troubleshoot based on that.
 * Use OCAuxiliaryTools to update to later OpenCore releases.  Use MacOS's built-in update mechanism to update MacOS releases.  
 * Otherwise, please leave comments/issues here. 
@@ -130,6 +138,6 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 
 
-**Addendum:  OC88, OC89, OC90**
+**Addendum:  OC90+**
 
-OC88 - OC90 work great; just use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed. 
+- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed. 
