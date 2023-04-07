@@ -141,4 +141,4 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 **Addendum:  OC90+**
 
-- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed. 
+- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC91 is tested (4/7/2023) and works great.
