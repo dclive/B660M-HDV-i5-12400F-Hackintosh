@@ -28,7 +28,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC90+ and Ventura 13.3+ is the only focus of current testing.
+* OC90+ and Ventura 13.3+ is the only focus of current testing.  
 
 **Hardware**
 
