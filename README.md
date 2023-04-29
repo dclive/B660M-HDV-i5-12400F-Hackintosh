@@ -24,7 +24,7 @@ PC4400 RAM & BIOS 12.01:
 
 ![235283498-3d7157d1-2e62-4592-aacb-a2161746af3b](https://user-images.githubusercontent.com/4536776/235283498-3d7157d1-2e62-4592-aacb-a2161746af3b.jpeg)
 
-The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  Scores seem to have gone down.  We'll see what happens in other tests; perhaps I'll revisit the test a bit later.  I do note that RAM speed in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.
+The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  Scores seem to have gone down.  We'll see what happens in other tests; perhaps I'll revisit the test a bit later.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.
 
 **Credits**
 
