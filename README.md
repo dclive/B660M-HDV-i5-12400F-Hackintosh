@@ -1,8 +1,8 @@
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC90, MacOS13.3****
+****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC90, MacOS13.3.1****
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 11.01 (Tested 3.4.2023) and Intel's Turbo works again for a significant speedup.*  
+*Now works with B660M HDV BIOS 12.01 (Tested 4.28.2023).*  
 
  
 
@@ -12,15 +12,19 @@
 
 **Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core, usuing PC3200 RAM: 
 
-PC3200 RAM: 
+PC3200 RAM & BIOS 11.01: 
 
 ![Screenshot 4](https://user-images.githubusercontent.com/4536776/227410860-13e2bbdc-5244-4d30-87c7-61cc7f4dbc28.png)
 
-PC4266 RAM: 
+PC4266 RAM & BIOS 11.01: 
 
 ![Screenshot3](https://user-images.githubusercontent.com/4536776/227410659-f9182eaf-bc5a-4376-a990-e5467d01a475.png)
 
+PC4400 RAM & BIOS 12.01: 
 
+![235283498-3d7157d1-2e62-4592-aacb-a2161746af3b](https://user-images.githubusercontent.com/4536776/235283498-3d7157d1-2e62-4592-aacb-a2161746af3b.jpeg)
+
+The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  Scores seem to have gone down.  We'll see what happens in other tests; perhaps I'll revisit the test a bit later.  I do note that RAM speed in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.
 
 **Credits**
 
@@ -28,16 +32,16 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC90+ and Ventura 13.3+ is the only focus of current testing.  
+* OC90+ and Ventura 13.3.1+ is the only focus of current testing.  
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 11.01 works well in MacOS Ventura 13.3.  It's safe to update, and all testing will only include 11.01 (or later) going forward.  Flash to 11.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea. 
+* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.3.1.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be accellerated) please see the appropriate section far below.  
 
-* 32GB RAM PC4266 [2 x 16GB DIMMs]
+* 32GB RAM PC4400 [2 x 16GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
 * PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]. :  Note:  I have no front panel USB3 ports.  You'll need to handle mapping your own USB3 (internal) ports if this is important to you / if you have a different case.  Use USBToolbox in Windows for the simplest experience.  Note that process will have TWO kexts you have to put into your Kexts folder, not one.  
@@ -61,7 +65,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  
 * Sidecar, as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
-* Universal Control and related functions don't reliably work for me.  
+* Universal Control and related functions don't reliably work for me.  I don't use them and can't help with troubleshooting.
 
 **Disabled**
 
@@ -116,7 +120,7 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Running 13.3 with BIOS 11.01 and an i5-12400F, and using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  
+* Running 13.3.1 with BIOS 11.01 and an i5-12400F, and using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  With BIOS 12.01 and PC4400 RAM, I get 2118/9629 in GeekBench 6.01.   
 * A typical M2 base $499 mini is (passmark) 2656/9858, so the base i5-12400F (PC3200 RAM) is about 82% of the M2's speed per core, and about 95% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
@@ -141,4 +145,4 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 **Addendum:  OC90+**
 
-- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC91 is tested (4/7/2023) and works great.
+- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC91 is tested (4/28/2023) and works great.
