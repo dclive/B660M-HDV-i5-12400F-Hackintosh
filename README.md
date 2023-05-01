@@ -4,6 +4,8 @@
 
 *Now works with B660M HDV BIOS 12.01 (Tested 4.28.2023).*  
 
+Beta 13.4 b5 (4.3.30) is very lightly tested and seems to work fine.
+
  
 
 ![209979958-639eab22-4828-4d80-82e3-be2a5510edc7](https://user-images.githubusercontent.com/4536776/209979958-639eab22-4828-4d80-82e3-be2a5510edc7.jpeg)
