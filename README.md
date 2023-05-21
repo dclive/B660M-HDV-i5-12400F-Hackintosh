@@ -1,10 +1,8 @@
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC90, MacOS13.3.1a****
+****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC90, MacOS13.4****
 
 *MAJOR CHANGES:  *
 
 *Now works with B660M HDV BIOS 12.01 (Tested 4.28.2023).*  
-
-Beta 13.4 b5 (4.3.30) is very lightly tested and seems to work fine.
 
  
 
@@ -34,11 +32,11 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC90+ and Ventura 13.3.1a+ is the only focus of current testing.  
+* OC90+ and Ventura 13.4 is the only focus of current testing.  
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.3.1a.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.
+* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.4.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be accellerated) please see the appropriate section far below.  
@@ -67,7 +65,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  
 * Sidecar, as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
-* Universal Control and related functions don't reliably work for me.  I don't use them and can't help with troubleshooting.
+* Universal Control and related functions don't reliably work for me.  I don't use them and can't help with troubleshooting.  
 
 **Disabled**
 
@@ -147,4 +145,4 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 **Addendum:  OC90+**
 
-- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC92 is tested (5/8/2023) and works great.
+- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC92 is tested (5/8/2023) and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT
