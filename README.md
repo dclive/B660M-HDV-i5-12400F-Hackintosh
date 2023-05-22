@@ -22,9 +22,9 @@ PC4266 RAM & BIOS 11.01:
 
 PC4400 RAM & BIOS 12.01: 
 
-![235283498-3d7157d1-2e62-4592-aacb-a2161746af3b](https://user-images.githubusercontent.com/4536776/235283498-3d7157d1-2e62-4592-aacb-a2161746af3b.jpeg)
+![240060265-78fb479e-577b-46bc-b67c-314ec07a70ef](https://user-images.githubusercontent.com/4536776/240060265-78fb479e-577b-46bc-b67c-314ec07a70ef.png)
 
-The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  Scores seem to have gone down.  We'll see what happens in other tests; perhaps I'll revisit the test a bit later.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.
+The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.
 
 **Credits**
 
@@ -120,8 +120,8 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  With BIOS 12.01 and PC4400 RAM, I get 2118/9629 in GeekBench 6.01.   
-* A typical M2 base $499 mini is (passmark) 2624/9675, so the base i5-12400F (PC4400 RAM) is about 81% of the M2's speed per core, and about 100% of the M2 (mini) speed with all cores compared.  
+* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  With BIOS 12.01 and PC4400 RAM, I get 2194/9869 in GeekBench 6.01.   
+* A typical M2 base $499 mini is (passmark) 2624/9675, so the base i5-12400F (PC4400 RAM) is about 84% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
 
