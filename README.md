@@ -121,7 +121,7 @@ Now let's fix your MAC address (ROM)
 **Benchmark Expectations**
 
 * Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  With BIOS 12.01 and PC4400 RAM, I get 2118/9629 in GeekBench 6.01.   
-* A typical M2 base $499 mini is (passmark) 2656/9858, so the base i5-12400F (PC3200 RAM) is about 82% of the M2's speed per core, and about 95% of the M2 (mini) speed with all cores compared.  
+* A typical M2 base $499 mini is (passmark) 2624/9675, so the base i5-12400F (PC4400 RAM) is about 81% of the M2's speed per core, and about 100% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
 
