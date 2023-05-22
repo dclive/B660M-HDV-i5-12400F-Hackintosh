@@ -36,7 +36,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.4.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.
+* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.4.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be accellerated) please see the appropriate section far below.  
@@ -120,7 +120,7 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  With BIOS 12.01 and PC4400 RAM, I get 2194/9869 in GeekBench 6.01.   
+* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  With BIOS 12.01 and PC4400 RAM, I get 2194/9869 in GeekBench 6.03.   
 * A typical M2 base $499 mini is (passmark) 2624/9675, so the base i5-12400F (PC4400 RAM) is about 84% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
