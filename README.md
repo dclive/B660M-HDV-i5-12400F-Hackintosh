@@ -145,4 +145,4 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 **Addendum:  OC90+**
 
-- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC92 is tested (5/8/2023) and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT
+- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC93 is tested (6/13/2023) and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT
