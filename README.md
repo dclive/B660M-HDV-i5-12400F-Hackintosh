@@ -10,8 +10,6 @@
 
 
 
-**Typical is Geekbench 6.01 scores of 2188 single and 9369 multi-core, usuing PC3200 RAM: 
-
 PC3200 RAM & BIOS 11.01: 
 
 ![Screenshot 4](https://user-images.githubusercontent.com/4536776/227410860-13e2bbdc-5244-4d30-87c7-61cc7f4dbc28.png)
@@ -28,7 +26,7 @@ PC4400 RAM & BIOS 13.03:
 
 ![249596696-2ff73ede-f509-4e87-add2-bb35d65df47e](https://user-images.githubusercontent.com/4536776/249596696-2ff73ede-f509-4e87-add2-bb35d65df47e.png)
 
-The RAM sticks are unchanged from the middle test to the last test; BIOS updates are the only change.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.  
+The RAM sticks are unchanged from the second test to the last test; BIOS updates are the only change.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.  
 
 **Credits**
 
