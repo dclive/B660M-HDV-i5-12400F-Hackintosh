@@ -1,8 +1,8 @@
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90, MacOS13.4****
+****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update yourself to OC93], MacOS13.4.1****
 
 *MAJOR CHANGES:  *
 
-*Now works with B660M HDV BIOS 12.01 (Tested 4.28.2023).*  
+*Now works with B660M HDV BIOS 13.03 (Tested 6.28.2023).*  
 
  
 
@@ -24,7 +24,7 @@ PC4400 RAM & BIOS 12.01:
 
 ![240060265-78fb479e-577b-46bc-b67c-314ec07a70ef](https://user-images.githubusercontent.com/4536776/240060265-78fb479e-577b-46bc-b67c-314ec07a70ef.png)
 
-The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.
+The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.  After patching with 13.03, I've not yet run a speed test, but expect little to no variance.  
 
 **Credits**
 
@@ -32,11 +32,11 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC90+ and Ventura 13.4 is the only focus of current testing.  
+* OC90+ and Ventura 13.4.1 is the only focus of current testing.  
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.4.1.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
+* Asrock B660M-HDV with BIOS 13.03 works well in MacOS Ventura 13.4.1.  It's safe to update, and all testing will only include BIOS 13.03 (or later) going forward.  Flash to 13.03.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  
@@ -44,7 +44,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 * 32GB RAM PC4400 [2 x 16GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
 * Corsair RM650x
-* PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]. :  Note:  I have no front panel USB3 ports.  You'll need to handle mapping your own USB3 (internal) ports if this is important to you / if you have a different case.  Use USBToolbox in Windows for the simplest experience.  Note that process will have TWO kexts you have to put into your Kexts folder, not one.  
+* PowerMac G5 Case, LaserHive MATX 120 modifications [https://thelaserhive.com/product/g5-matx-120-kit/]. :  Note:  I have no front panel USB3 ports in my case.  You'll need to handle mapping your own USB3 (internal) ports if this is important to you / if you have a different case.  Use USBToolbox in Windows for the simplest experience.  Note that process will have TWO kexts you have to put into your Kexts folder, not one.  
 * BCM94360CS2 wifi card (https://www.amazon.com/dp/B01L6YWGXW) with M2 to NGFF adapter (https://www.ebay.com/itm/BCM94360CS2-Card-To-NGFF-M-2-Key-A-E-Adapter-For-Mac-OS-and-Hackintosh/391512537270?hash=item5b27f738b6:g:wIEAAOSw42JZGAtx) - fits perfectly on this motherboard in the wireless slot; no BIOS blocking of add-in cards exists on this machine.
 
 **Working**
@@ -69,7 +69,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Disabled**
 
-* In the Asrock B660M-HDV BIOS:  Disable:  Fast Boot, serial port, CSM, CAM (Clever Access Memory, AKA Resize Bar), Secure Boot.  Once you get everything else working, feel free to enable resize bar (and use the appropriate controls in OC) if you wish; I don't bother.
+* In the Asrock B660M-HDV BIOS:  Disable:  Fast Boot, serial port, CSM, CAM (Clever Access Memory, AKA Resize Bar), Secure Boot, CFG-Lock.  Once you get everything else working, feel free to enable resize bar (and use the appropriate controls in OC) if you wish; I don't bother.
 
 **Enabled**
 
