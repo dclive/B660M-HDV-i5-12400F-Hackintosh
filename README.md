@@ -24,6 +24,10 @@ PC4400 RAM & BIOS 12.01:
 
 ![240060265-78fb479e-577b-46bc-b67c-314ec07a70ef](https://user-images.githubusercontent.com/4536776/240060265-78fb479e-577b-46bc-b67c-314ec07a70ef.png)
 
+PC4400 RAM & BIOS 13.03: 
+
+![249596696-2ff73ede-f509-4e87-add2-bb35d65df47e](https://user-images.githubusercontent.com/4536776/249596696-2ff73ede-f509-4e87-add2-bb35d65df47e.png)
+
 The RAM sticks are unchanged from the middle test to the last test; the BIOS (12.01) is the only change.  I do note that RAM speed seen in MacOS has changed from PC4266 to PC4400, even if the sticks of RAM remain the same, with the only change being the new BIOS.  After patching with 13.03, I've not yet run a speed test, but expect little to no variance.  
 
 **Credits**
