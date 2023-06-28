@@ -124,8 +124,8 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core).  With BIOS 12.01 and PC4400 RAM, I get 2194/9869 in GeekBench 6.03.   
-* A typical M2 base $499 [Edu] mini is (Geekbench) 2624/9675, so the base i5-12400F (PC4400 RAM) is about 84% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
+* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core).  With BIOS 13.03 and PC4400 RAM, I get 2263/10209 in GeekBench 6.10.   
+* A typical M2 base $499 [Edu] mini is (Geekbench) 2625/9687, so the base i5-12400F (PC4400 RAM) is about 86% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
 
