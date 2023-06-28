@@ -4,6 +4,8 @@
 
 *Now works with B660M HDV BIOS 13.03 (Tested 6.28.2023).*  
 
+***Later Edit:  Hold off on 13.03 updates for the moment.  I am booted fine into 13.03 now, but my previous boot went into a black screen.  More time (and reboots) are required to see if this is typical or not.***
+
  
 
 ![209979958-639eab22-4828-4d80-82e3-be2a5510edc7](https://user-images.githubusercontent.com/4536776/209979958-639eab22-4828-4d80-82e3-be2a5510edc7.jpeg)
