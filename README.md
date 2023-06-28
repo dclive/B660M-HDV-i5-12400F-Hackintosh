@@ -1,4 +1,4 @@
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-1200F - Fully working, OC90, MacOS13.4****
+****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90, MacOS13.4****
 
 *MAJOR CHANGES:  *
 
@@ -36,10 +36,10 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.4.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
+* Asrock B660M-HDV with BIOS 12.01 works well in MacOS Ventura 13.4.1.  It's safe to update, and all testing will only include BIOS 12.01 (or later) going forward.  Flash to 12.01.  After Flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
-  * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be accellerated) please see the appropriate section far below.  
+  * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  
 
 * 32GB RAM PC4400 [2 x 16GB DIMMs]
 * 2TB NVME [ADATA 8200 Pro]
@@ -62,7 +62,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Not Working**
 
-* Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  
+* Broadly, anything requiring Intel QuickSync / Intel graphics won't work, since the Intel Xe graphics on 11th-12th gen isn't supported by MacOS in any capacity whatsoever - zero functionality, no exceptions.  You must have an AMD GPU with 11th-12th-13th gen Intel CPUs.
 * Sidecar, as the Intel i5-12400F doesn't have an iGPU, and SideCar supports either the iGPU or a T2, not an AMD GPU.
 * All video-out ports on the motherboard, as Intel 11th-12th gen (Xe) iGPU isn't supported in MacOS. 
 * Universal Control and related functions don't reliably work for me.  I don't use them and can't help with troubleshooting.  
@@ -79,7 +79,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 You will need to do the following: 
 
-* Prepare a USB boot disk for MacOS 13.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  TINU also can make a bootable USB stick... 
+* Prepare a USB boot disk for MacOS 13.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  The application 'TINU' also can make a bootable USB stick... 
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI (ESP) partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
 
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
@@ -120,8 +120,8 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core) and 20795/3349 Passmark CPU Mark/Memory Mark) scores, using Passmark from the Apple App Store, v 10.2.1000.  With BIOS 12.01 and PC4400 RAM, I get 2194/9869 in GeekBench 6.03.   
-* A typical M2 base $499 mini is (passmark) 2624/9675, so the base i5-12400F (PC4400 RAM) is about 84% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
+* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core).  With BIOS 12.01 and PC4400 RAM, I get 2194/9869 in GeekBench 6.03.   
+* A typical M2 base $499 [Edu] mini is (Geekbench) 2624/9675, so the base i5-12400F (PC4400 RAM) is about 84% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
 
