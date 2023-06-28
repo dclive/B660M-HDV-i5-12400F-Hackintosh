@@ -83,7 +83,7 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 You will need to do the following: 
 
-* Prepare a USB boot disk for MacOS 13.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  The application 'TINU' also can make a bootable USB stick... 
+* Prepare a USB boot disk for MacOS 13.x installation.  The easiest way is on a real Mac, although gibMacOS may work for you as well.  To follow the much easier Real Mac path, read https://support.apple.com/en-us/HT201372 and follow the directions for MacOS, including the terminal command to write the download to the USB stick.  You'll want to format the USB as HFS+ format, GUID.  The application 'TINU' also can make a bootable USB stick... (https://github.com/ITzTravelInTime/TINU)
 * Download EFIAgent (https://github.com/headkaze/EFI-Agent) and mount the EFI (ESP) partition for the USB stick you just made.  Using EFIAgent again, "open" the EFI partition so it shows on the Mac desktop.  Note that EFI partitions are typically GRAY in color in EFIAgent.  To find EFIAgent, locate the new icon in the upper right clock area that looks like a circular pie.  ![Screen Shot 2021-09-25 at 7 22 44 PM](https://user-images.githubusercontent.com/4536776/134790066-27597b9e-a37f-47e0-87f5-d3ebbc2af59f.png)
 
  >>  Remember this process for any future EFI partitions you must mount; this is a common procedure.
@@ -124,7 +124,7 @@ Now let's fix your MAC address (ROM)
 
 **Benchmark Expectations**
 
-* Using PC3200 RAM, I get GeekBench 6.01 scores of 2188/9369 (single/multi-core).  With BIOS 13.03 and PC4400 RAM, I get 2263/10209 in GeekBench 6.10.   
+* With BIOS 13.03 and PC4400 RAM, I get 2263/10209 in GeekBench 6.10.   
 * A typical M2 base $499 [Edu] mini is (Geekbench) 2625/9687, so the base i5-12400F (PC4400 RAM) is about 86% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
@@ -149,4 +149,4 @@ Save, reboot, and your 6900 will be enabled.  Note: this only works with a B660M
 
 **Addendum:  OC90+**
 
-- Use OCAT to update.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC93 is tested (6/13/2023) and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT
+- Use OCAT to update to the latest OpenCore.  No issues to report.  DO THIS.  It's worth staying current and fully fixed.  OC93 is tested (6/13/2023) and works great.  Read a simple guide I wrote here for details on howto:  https://github.com/dclive/Howto--Update-OpenCore-with-OCAT
