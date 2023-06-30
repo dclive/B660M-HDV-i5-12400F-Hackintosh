@@ -4,7 +4,7 @@
 
 *Now works with B660M HDV BIOS 13.03 (Tested 6.28.2023).*  
 
-***Later Edit:  Hold off on 13.03 updates for the moment.  I am booted fine into 13.03 now, but my previous boot went into a black screen.  More time (and reboots) are required to see if this is typical or not.***
+**BIOS 13.03 did experience some strange behavior initially after flashing:  the first boots into MacOS led to a black screen (without the colorful Mac desktop) after KEXT/etc. loadup.  In further testing, this issue has not continued, so I now suggest flashing to BIOS 13.03.**  
 
  
 
