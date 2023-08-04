@@ -1,4 +1,4 @@
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update OC yourself to OC9x], MacOS13.4.1****
+****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update OC yourself to OC9x], MacOS13.5****
 
 *MAJOR CHANGES:  *
 
@@ -36,11 +36,11 @@ Most content was sourced from https://github.com/Xmingbai/ASUS-TUF-GAMING-B660M-
 
 **Tested macOS**
 
-* OC90+ and Ventura 13.4.1 is the only focus of current testing.  
+* OC90+ and Ventura 13.5 is the only focus of current testing.  
 
 **Hardware**
 
-* Asrock B660M-HDV with BIOS 13.03 works well in MacOS Ventura 13.4.1.  It's safe to update, and all testing will only include BIOS 13.03 (or later) going forward.  Flash to 13.03.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
+* Asrock B660M-HDV with BIOS 13.03 works well in MacOS Ventura.  It's safe to update, and all testing will only include BIOS 13.03 (or later) going forward.  Flash to 13.03.  After the flash, load all BIOS defaults.  Then disable GPU ReBar, disable serial, disable secure boot, disable CFGLock, set XMP to on (if your RAM is capable), and ... I think that's all that's required in BIOS.  I do **not** suggest changing any wattage limits.  The above graphic of my speed is superior to previous test runs where I changed BIOS options to increase wattage limits; it appears with this motherboard removing those wattage limits is a bad idea.  **I welcome comments and tests on this in the 'Issues' section of this Github; please add your findings.**
 * Intel i5-12400F
 * AMD RX 5700 GPU or AMD RX 6800XT GPU  [An AMD GPU is required regardless of which 12th gen CPU you use, no exceptions]
   * Most typical, RX470, RX480, RX570, RX580, RX590, Vega 56, Vega 64, RX 5700, RX6600, RX6600XT, RX6800, RX6800XT, RX6900XT will all work.  Some other variants (some RX560, for example) will work also, but you should google for more details before buying.  If you buy a 6900XT and it's the XTXH variant (you'll know because it will work, but won't be GPU-accellerated) please see the appropriate section far below.  
