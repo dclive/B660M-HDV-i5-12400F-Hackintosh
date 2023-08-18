@@ -1,3 +1,5 @@
+As my motherboard/CPU recently friend due to a PSU issue, updates may lag. 
+
 ****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update OC yourself to OC9x], MacOS13.5****
 
 *MAJOR CHANGES:  *
