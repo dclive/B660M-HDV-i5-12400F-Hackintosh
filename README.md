@@ -1,4 +1,6 @@
-As my motherboard/CPU recently fried due to a PSU issue, updates will likely cease.  So far I expect the motherboard and CPU are both lost.  
+As my motherboard/CPU recently fried due to a PSU issue, updates will likely cease.  
+
+Stay tuned for a mild update with a Gigabyte B660M Elite AX board.  Hint:  WIth the same i5-12400F CPU, the Gigabyte board is slower than the much-maligned Asrock B660M-HDV board.
 
 ****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update OC yourself to OC9x], MacOS13.5****
 
@@ -6,9 +8,7 @@ As my motherboard/CPU recently fried due to a PSU issue, updates will likely cea
 
 *Now works with B660M HDV BIOS 13.03 (Tested 6.28.2023).*  
 
-**BIOS 13.03 did experience some strange behavior initially after flashing:  the first boots into MacOS led to a black screen (without the colorful Mac desktop) after KEXT/etc. loadup.  In further testing, this issue has not continued, so I now suggest flashing to BIOS 13.03.**  
 
- 
 
 ![209979958-639eab22-4828-4d80-82e3-be2a5510edc7](https://user-images.githubusercontent.com/4536776/209979958-639eab22-4828-4d80-82e3-be2a5510edc7.jpeg)
 
@@ -127,7 +127,7 @@ Now let's fix your MAC address (ROM)
 **Benchmark Expectations**
 
 * With BIOS 13.03 and PC4400 RAM, I get 2263/10209 in GeekBench 6.10.   
-* A typical M2 base $499 [Edu] mini is (Geekbench) 2625/9687, so the base i5-12400F (PC4400 RAM) is about 86% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
+* A typical M2 base $499 [Edu] mini is (Geekbench) 2629/9733, so the base i5-12400F (PC4400 RAM) is about 86% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
 
 **Addendum:  6900 Configuration**
 
