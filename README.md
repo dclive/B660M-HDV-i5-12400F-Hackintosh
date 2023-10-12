@@ -1,8 +1,6 @@
-As my motherboard/CPU recently fried due to a PSU issue, updates will likely cease.  
+**As my motherboard/CPU recently fried due to a PSU issue, updates will likely cease.**  
 
-Stay tuned for a mild update with a Gigabyte B660M Elite AX board.  Hint:  WIth the same i5-12400F CPU, the Gigabyte board is slower than the much-maligned Asrock B660M-HDV board.
-
-****Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update OC yourself to OC9x], MacOS13.5****
+**Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update OC yourself to OC9x], MacOS13.5**
 
 *MAJOR CHANGES:  *
 
