@@ -1,4 +1,4 @@
-**As my motherboard/CPU recently fried due to a PSU issue, updates will likely cease.**  
+**As my motherboard/CPU recently fried due to a PSU issue, updates will likely cease.**  Please see the successor 'project', https://github.com/dclive/Gigabyte-B660M-Elite-AX, a Gigabyte Aorus B660M Elite AX motherboard.   
 
 **Hackintosh EFI Information for Asrock B660M-HDV and i5-12400F - Fully working, OC90 [Update OC yourself to OC9x], MacOS13.5**
 
