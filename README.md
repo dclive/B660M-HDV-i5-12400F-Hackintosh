@@ -125,7 +125,7 @@ Now let's fix your MAC address (ROM)
 **Benchmark Expectations**
 
 * With BIOS 13.03 and PC4400 RAM, I get 2263/10209 in GeekBench 6.10.   
-* A typical M2 base $499 [Edu] mini is (Geekbench) 2629/9733, so the base i5-12400F (PC4400 RAM) is about 86% of the M2's speed per core, and about 105% of the M2 (mini) speed with all cores compared.  
+* A typical M4 base $499 [Edu] mini is (Geekbench) 3678/14678, so the base i5-12400F (PC4400 RAM) is about 62% of the M4's speed per core, and about 70% of the M4 (mini) speed with all cores compared.  Obviously, the M4 is a far better purchase for most people in 2024/2025.
 
 **Addendum:  6900 Configuration**
 
